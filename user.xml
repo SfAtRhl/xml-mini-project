@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="user.xsl"?>
+<system xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="user.xsd">
+  <users>
+    <user>
+      <id>3</id>
+      <username>1111</username>
+      <password>1111</password>
+      <email>johndoe@example.com</email>
+      <firstname>John</firstname>
+      <lastname>Doe</lastname>
+      <dob>1990-05-15</dob>
+      <address>
+        <street>123 Main St</street>
+        <city>Cityville</city>
+        <state>State</state>
+        <zip>12345</zip>
+      </address>
+      <role>admin</role>
+    </user>
+
+    <user>
+      <id>3</id>
+      <username>janedoe</username>
+      <password>pass456</password>
+      <email>janedoe@example.com</email>
+      <firstname>Jane</firstname>
+      <lastname>Doe</lastname>
+      <dob>1985-08-20</dob>
+      <address>
+        <street>456 Oak Ave</street>
+        <city>Townsville</city>
+        <state>State</state>
+        <zip>67890</zip>
+      </address>
+      <role>teacher</role>
+    </user>
+    <user>
+      <id>7</id>
+      <username>0000</username>
+      <password>0000</password>
+      <email>sofyan.ait.rehail@gmail.com</email>
+      <firstname>soufyane</firstname>
+      <lastname>Ait rehail</lastname>
+      <dob>2024-01-05</dob>
+      <address>
+        <street>Dr Takad Sidi Bibi Chtouka Ait Baha</street>
+        <city>sidi bibi chtouka ait baha</city>
+        <state>12</state>
+        <zip>80000</zip>
+      </address>
+      <role>user</role>
+      <bac>French Baccalaureate</bac>
+      <status>pending</status>
+      <specialty>TM</specialty>
+      <diplome>Doctor of Medicine (MD)</diplome>
+      <noteS1>12</noteS1>
+      <noteS2>13</noteS2>
+      <noteS3>14</noteS3>
+      <noteS4>16</noteS4>
+      <classement_1>94</classement_1>
+      <classement_2>68</classement_2>
+      <license>License 1</license>
+    </user>
+    <user>
+      <id>4</id>
+      <username>soufyane</username>
+      <password>password</password>
+      <email>sofyan.ait.rehail@gmail.com</email>
+      <firstname>soufyane</firstname>
+      <lastname>Ait rehail</lastname>
+      <dob>2024-01-06</dob>
+      <address>
+        <street>Dr Takad Sidi Bibi Chtouka Ait Baha</street>
+        <city>sidi bibi chtouka ait baha</city>
+        <state>12</state>
+        <zip>JH61509</zip>
+      </address>
+      <role>user</role>
+      <bac>American High School Diploma</bac>
+      <status>pending</status>
+      <specialty>Electrical Engineering</specialty>
+      <diplome>Bachelor of Science in Electrical Engineering</diplome>
+      <noteS1>12</noteS1>
+      <noteS2>12</noteS2>
+      <noteS3>sidi bibi chtouka ait baha</noteS3>
+      <noteS4>16</noteS4>
+      <classement_1>94</classement_1>
+      <classement_2>68</classement_2>
+      <license>License 1</license>
+      <license>License 1</license>
+      <license>License 1</license>
+    </user>
+  </users>
+  <all__permissions>
+    <permission>create Inscriptions</permission>
+    <permission>write inscriptions </permission>
+    <permission>delete inscriptions</permission>
+    <permission>view all inscriptions</permission>
+    <permission>view inscriptions</permission>
+    <permission>create role</permission>
+    <permission>delete role</permission>
+    <permission>update role</permission>
+    <permission>manage roles</permission>
+    <permission>write</permission>
+  </all__permissions>
+  <roles>
+    <role>admin</role>
+    <permissions>
+      <permission>create Inscriptions</permission>
+      <permission>write inscriptions </permission>
+      <permission>ls inscriptions </permission>
+      <permission>dir inscriptions </permission>
+      <permission>writ inscriptions </permission>
+      <permission>wr inscriptions </permission>
+      <permission>clear inscriptions </permission>
+      <permission>ms Inscriptions</permission>
+      <permission>writ inscriptions </permission>
+      <permission>pas inscriptions </permission>
+      <permission>pass inscriptions </permission>
+      <permission>ls inscriptions </permission>
+    </permissions>
+  </roles>
+  <roles>
+    <role>directeur</role>
+    <permissions>
+      <permission>create Inscriptions</permission>
+      <permission>write inscriptions </permission>
+    </permissions>
+  </roles>
+  <roles>
+    <role>enseignant</role>
+
+    <permissions>
+      <permission>dir inscriptions </permission>
+    </permissions>
+  </roles>
+  <roles>
+    <role>Role000</role>
+    <permissions>
+      <permission>create Inscriptions</permission>
+      <permission>write inscriptions </permission>
+    </permissions>
+  </roles>
+  <bacs>
+    <bac>French Baccalaureate</bac>
+    <bac>American High School Diploma</bac>
+    <bac>International Baccalaureate (IB)</bac>
+    <bac>German Abitur</bac>
+    <bac>British A-levels</bac>
+    <bac>Italian Esame di Stato</bac>
+  </bacs>
+  <specialties>
+    <specialty>
+      <name>Computer Science</name>
+      <diploma>Bachelor of Science in Computer Science</diploma>
+      <diploma>Science in Computer Science</diploma>
+      <License>License 1</License>
+    </specialty>
+    <specialty>
+      <name>Electrical Engineering</name>
+      <diploma>Bachelor of Science in Electrical Engineering</diploma>
+      <diploma>Electrical Engineering</diploma>
+      <License>License 1</License>
+
+    </specialty>
+    <specialty>
+      <name>TM</name>
+      <diploma>Doctor of Medicine (MD)</diploma>
+      <diploma>F of Medicine (FD)</diploma>
+      <License>License 1</License>
+      <License>License 1</License>
+      <License>License 1</License>
+      <License>License 1</License>
+
+    </specialty>
+    <specialty>
+      <name>Software Engineering</name>
+      <diploma>Bachelor of Science in Computer Science</diploma>
+      <diploma>Science in Computer Science</diploma>
+
+    </specialty>
+    <specialty>
+      <name>Data Science</name>
+      <diploma>Bachelor of Science in Computer Science</diploma>
+      <diploma>Science in Computer Science</diploma>
+      <License>License 1</License>
+
+    </specialty>
+    <specialty>
+      <name>Artificial Intelligence</name>
+      <diploma>Master of Science in Computer Science</diploma>
+      <diploma>Master of Computer Science</diploma>
+      <License>License 1</License>
+
+    </specialty>
+  </specialties>
+  <statusies>
+    <status>Pending</status>
+    <status>Accept</status>
+    <status>Decline</status>
+  </statusies>
+  <roles>
+    <role>Role111</role>
+    <permissions>
+      <permission>create Inscriptions</permission>
+      <permission>write inscriptions </permission>
+      <permission>ls inscriptions </permission>
+      <permission>dir inscriptions </permission>
+    </permissions>
+  </roles>
+</system>

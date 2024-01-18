@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="id" type="xs:string">
+        <xs:unique name="uniqueId">
+            <xs:selector xpath="id" />
+            <xs:field xpath="." />
+        </xs:unique>
+    </xs:element>
+
+    <xs:element name="system">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="users">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="user" maxOccurs="unbounded">
+                                <xs:complexType>
+
+                                    <xs:sequence>
+                                        <!-- <xs:element name="id" type="xs:string" /> -->
+                                        <xs:element ref="id" />
+                                        <xs:element name="username" type="xs:string" />
+                                        <xs:element name="password" type="xs:string" />
+                                        <xs:element name="email" type="xs:string" />
+                                        <xs:element name="firstname" type="xs:string" />
+                                        <xs:element name="lastname" type="xs:string" />
+                                        <xs:element name="dob" type="xs:string" />
+                                        <xs:element name="address">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="street" type="xs:string" />
+                                                    <xs:element name="city" type="xs:string" />
+                                                    <xs:element name="state" type="xs:string" />
+                                                    <xs:element name="zip" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="role" type="xs:string" />
+                                        <xs:element name="bac" minOccurs="0" type="xs:string" />
+                                        <xs:element name="status" minOccurs="0" type="xs:string" />
+                                        <xs:element name="specialty" minOccurs="0" type="xs:string" />
+                                        <xs:element name="diplome" minOccurs="0" type="xs:string" />
+                                        <xs:element name="noteS1" minOccurs="0" type="xs:string" />
+                                        <xs:element name="noteS2" minOccurs="0" type="xs:string" />
+                                        <xs:element name="noteS3" minOccurs="0" type="xs:string" />
+                                        <xs:element name="noteS4" minOccurs="0" type="xs:string" />
+                                        <xs:element name="classement_1" minOccurs="0"
+                                            type="xs:string" />
+                                        <xs:element name="classement_2" minOccurs="0"
+                                            type="xs:string" />
+                                        <xs:element name="license" minOccurs="0"
+                                            maxOccurs="unbounded" type="xs:string" />
+                                    </xs:sequence>
+
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="all__permissions">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="permission" maxOccurs="unbounded" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="roles" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="role" type="xs:string" />
+                            <xs:element name="permissions">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="permission" maxOccurs="unbounded"
+                                            type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="bacs">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="bac" maxOccurs="unbounded" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="specialties">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="specialty" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string" />
+                                        <xs:element name="diploma" maxOccurs="unbounded"
+                                            type="xs:string" />
+                                        <xs:element name="License" minOccurs="0"
+                                            maxOccurs="unbounded" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="statusies">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="status" maxOccurs="unbounded" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
